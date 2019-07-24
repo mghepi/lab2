@@ -28,4 +28,5 @@ ggplot(gapminder2007, aes(x=gdpPercap, y=lifeExp, color=continent, size=pop))+
 ggplot(gapminder2007, aes(x=gdpPercap, y=lifeExp))+
   geom_point()+
   scale_x_log10()+
-  facet_wrap(~continent)
+  facet_wrap(~continent)+
+  facet_grid(continent~.)
